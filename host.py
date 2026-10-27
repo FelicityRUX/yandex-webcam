@@ -37,7 +37,6 @@ def killffmpeg():
     if process:
         process.kill()
 
-    print("Завершаем...")
     exit(0)
 
 signal.signal(signal.SIGINT, killffmpeg)
