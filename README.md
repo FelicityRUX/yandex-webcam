@@ -20,12 +20,12 @@ stateDiagram-v2
     FFM --> Reciever: WAV поток → UDP, порт 8188
     You --> Video: Камера
     Video --> Reciever: Кадр в 13x15, получает нужные пиксели -> UDP, порт 8388
-    Reciever --> Speaker: Поток производится aplay
+    Reciever --> Speaker: Поток производится с помощью aplay
     Reciever --> Speaker: Кадры пишутся в /dev/fb0
 ```
 ---
 ## 2. Установка
-1. git clone этот репоситорий
+1. `git clone https://github.com/FelicityRUX/yandex-webcam.git`
 2. host.py должен запускаться с пк
 3. yandex.py должен запускаться с колонки
 
